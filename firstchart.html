@@ -1,0 +1,148 @@
+<html>
+
+<head>
+    <title>Nama - NRP</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <div>
+        <canvas id="myChart"></canvas>
+    </div>
+    <script>
+        const labels = [
+
+            'Afghanistan',
+            'Argentina',
+            'Armenia',
+            'Australia',
+            'Austria',
+            'Azerbaijan',
+            'Bahrain',
+            'Bangladesh',
+            'Barbados',
+            'Belarus',
+            'Belgium',
+            'Bolivia',
+            'Bosnia',
+            'Botswana',
+            'Brazil',
+            'Bulgaria',
+            'Burkina Faso',
+            'Burundi',
+            'Cambodia',
+            'Cameroon',
+            'Canada',
+            'Cent. Afri.R',
+            'Chile',
+            'China',
+            'Colombia',
+            'Costa Rica',
+            'Croatia',
+            'Cuba',
+            'Czech Rep.',
+            'Denmark',
+            'Domincan R.',
+            'Ecuador',
+            'Egypt',
+            'El Salvador',
+            'Estonia',
+            'Ethiopia',
+            'Finland',
+            'France',
+            'Gabon',
+            'Gambia',
+            'Georgia',
+            'Germany',
+            'Greece',
+            'Guatemala',
+            'Haiti',
+            'Honduras',
+            'Hong Kong',
+            'Hungary',
+            'Iceland',
+            'India',
+            'Indonesia',
+
+        ];
+
+        const data = {
+            labels: labels,
+            datasets: [{
+                label: 'Population',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [25,
+                    12,
+                    126,
+                    2, 3,
+                    94,
+                    86,
+                    828,
+                    800,
+                    605,
+                    50,
+                    329,
+                    6, 9,
+                    87,
+                    2, 4,
+                    18,
+                    79,
+                    36,
+                    216,
+                    55,
+                    27,
+                    2, 8,
+                    5,
+                    18,
+                    124,
+                    31,
+                    64,
+                    85,
+                    99,
+                    132,
+                    120,
+                    159,
+                    39,
+                    57,
+                    246,
+                    36,
+                    47,
+                    39,
+                    105,
+                    4, 2,
+                    86,
+                    81,
+                    227,
+                    80,
+                    97,
+                    231,
+                    46,
+                    5494,
+                    111,
+                    2, 5,
+                    283,
+                    102,
+                ],
+            }]
+        };
+
+        const config = {
+            type: 'bar',
+            data: data,
+            options: {
+            indexAxis: 'y',
+            }
+        };
+    </script>
+    <script>
+        const myChart = new Chart(
+            document.getElementById('myChart'),
+            config
+        );
+    </script>
+
+</body>
+
+</html>
